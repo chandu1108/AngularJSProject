@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="notepadApp">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Notepad Manager</title>
+  <link rel="shortcut icon" type="x-icon" href="logo.jpg">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body ng-controller="NotepadController">
+  <div class="notepad-container">
+    <h2>Welcome to Notepad Manager</h2>
+    <div>
+      <textarea ng-model="newNote" placeholder="Type your note here"></textarea><br>
+      <button class="btn btn-primary" ng-click="addNote()">Add Note</button>
+    </div>
+    <div ng-show="notes.length > 0">
+      <h3>Your Notes</h3>
+      <div class="note-item" ng-repeat="note in notes">
+        <span>{{ note }}</span>
+        <button class="btn btn-success" ng-click="editNote($index)">Edit</button>
+        <button class="btn btn-danger" ng-click="deleteNote($index)">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="angular.js"></script>
+</body>
+
+</html>

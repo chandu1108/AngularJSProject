@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Notepad Manager</title>
+    <link rel="shortcut icon" type="x-icon" href="logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login to Notepad Manager</h2>
+        <form>
+            <input type="text" placeholder="Username" id="Username" required>
+            <input type="password" placeholder="Password" id="password" required>
+            <button type="submit" onclick="auth()">Login</button>
+            <div class="login-link">
+                <p>Don't have an account? <b style="color: rgba(255, 3, 3, 0.95);">Sign Up</b></p>
+            </div>
+        </form>
+    </div>
+    <script>
+        function auth(){
+            var Username= document.getElementById("Username").value;
+            var password= document.getElementById("password").value;
+            if(Username=="admin" && password=="admin123"){
+                window.location.assign("project.html");
+                alert("Login Successful");
+            }
+            else{
+                alert("Invalid Information");
+                return;
+            }
+        }
+    </script>
+</body>
+</html>
