@@ -33,7 +33,7 @@ body {
 
     .note-item {
       margin-bottom: 10px;
-      background-color: #ffffff;
+      background-color: #f5f5efd8;
       padding: 10px;
       border-radius: 4px;
     }
@@ -67,8 +67,28 @@ body {
       background-color: #3fe479;
     }
     h2{
-        color: #ffffff;
+        color: #ff0000;
     }
     h3{
         color: #ffffff;
+    }
+    p{
+      text-align-last: right;
+      color: #ffffff;
+    }
+
+    .footer {
+      background-color: #ffffff7b;
+      padding: 1px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer p {
+      text-align-last: center;
+      margin: 5px;
+      font-size: 9px;
+      color: #000000;
     }
