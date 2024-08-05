@@ -26,8 +26,10 @@
             var password= document.getElementById("password").value;
             if(Username=="admin" && password=="admin123"){
                 window.location.assign("project.html");
+                alert("Login Successfull");
             }
             else{
+                alert("Invalid Credentials");
                 return;
             }
         }
