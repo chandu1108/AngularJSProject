@@ -9,13 +9,14 @@ body {
         }
 
         .login-container {
-            background-color: transparent;
+            background-color:#16151597;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgb(255, 255, 255);
-            width: 300px;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            width: 350px;
+            height: auto;
             text-align: center;
-            animation: slideIn 1s ease-in-out; /* Add animation */
+            animation: slideIn 1s ease-in-out;
         }
 
         @keyframes slideIn {
@@ -31,7 +32,7 @@ body {
 
         .login-container h2 {
             margin-bottom: 20px;
-            color: #ffffff;
+            color: #292727;
         }
 
         .login-container input {
